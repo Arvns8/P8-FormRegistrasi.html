@@ -1,0 +1,60 @@
+
+<head>
+    <title> FORM Registrasi</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="frstyle.css" />
+</head>
+    <title>Registration Form</title>
+    <style>
+        form {
+            width: 400px;
+            margin: 0 auto;
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+        }
+        input[type="text"],
+        input[type="date"],
+        textarea,
+        select {
+            width: 100%;
+            margin-bottom: 10px;
+        }
+        input[type="submit"],
+        input[type="reset"] {
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h2 style="text-align: center;">Free Registration</h2>
+    <form action="#">
+        <label for="nama">Nama</label>
+        <input type="text" id="nama" name="nama">
+        <label for="tgl_lahir">Tgl Lahir:</label>
+        <input type="date" id="tgl_lahir" name="tgl_lahir">
+        <label for="alamat">Alamat</label>
+        <textarea id="alamat" name="alamat"></textarea>
+        <label for="kota">Kota</label>
+        <input type="text" id="kota" name="kota">
+        <label for="pekerjaan">Pekerjaan:</label>
+        <select id="pekerjaan" name="pekerjaan">
+            <option value="PNS">PNS</option>
+            <option value="Wirausaha">Wirausaha</option>
+            <option value="Karyawan Swasta">Karyawan swasta</option>
+        </select>
+        Jenis:
+        <input type="radio" name="gender" value="Laki-Laki" checked> Laki-Laki
+        <input type="radio" name="gender" value="Perempuan"> Perempuan<br>
+        Hobby: <br>
+        <input type="checkbox" name="hobby" value="Swimming"> Swimming<br>
+        <input type="checkbox" name="hobby" value="Badminton"> Badminton<br>
+        <input type="checkbox" name="hobby" value="Gaming"> Gaming<br>
+        <input type="checkbox" name="hobby" value="Golf"> Golf<br>
+        <input type="submit" value="Kirim">
+        <input type="reset" value="Cancel">
+    </form>
+</body>
+</html>
